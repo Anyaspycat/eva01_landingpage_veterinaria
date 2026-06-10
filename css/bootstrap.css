@@ -13869,3 +13869,27 @@ fieldset:disabled .btn {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+/* Código sugerido por Copilot para estilos de tarjetas */
+.treatment-card{
+    border: none;
+    border-radius: .75rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+.treatment-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+.treatment-card .card-img-top{
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+details > summary{ cursor: pointer; }
+details p{ margin: .5rem 0 0 0; color: #495057; }
+
+@media (max-width: 576px){
+    .treatment-card .card-img-top{ height: 140px; }
+}
