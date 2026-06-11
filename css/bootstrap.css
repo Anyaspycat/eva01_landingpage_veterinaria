@@ -13870,7 +13870,7 @@ fieldset:disabled .btn {
 
 /*# sourceMappingURL=bootstrap.min.css.map */
 
-/* Código sugerido por Copilot para estilos de tarjetas */
+/* Código sugerido por Copilot para estilos de tarjetas y colores*/
 .treatment-card{
     border: none;
     border-radius: .75rem;
@@ -13889,6 +13889,71 @@ fieldset:disabled .btn {
 }
 details > summary{ cursor: pointer; }
 details p{ margin: .5rem 0 0 0; color: #495057; }
+
+@media (max-width: 576px){
+    .treatment-card .card-img-top{ height: 140px; }
+}
+
+/* Paleta principal: celeste y blanco */
+:root{
+    --brand-celeste: #5BC0EB; /* celeste principal */
+    --brand-celeste-dark: #0b4f6c; /* contraste oscuro */
+    --brand-white: #ffffff;
+    --brand-dark: #000000;
+    --muted: #6c757d;
+}
+
+/* Navbar */
+.bg-celeste{
+    --bs-bg-opacity: 1;
+    background-color: var(--brand-celeste) !important;
+}
+.navbar.bg-celeste .navbar-brand,
+.navbar.bg-celeste .nav-link{
+    color: var(--brand-celeste-dark) !important;
+}
+.navbar.bg-celeste .nav-link:hover{
+    color: var(--brand-dark) !important;
+}
+
+/* Botones personalizados */
+.btn-celeste{
+    background-color: var(--brand-celeste);
+    border-color: rgba(0,0,0,0.05);
+    color: var(--brand-white);
+}
+.btn-celeste:hover{
+    background-color: #49acd9;
+    color: var(--brand-white);
+}
+
+/* Footer */
+footer.bg-celeste{
+    background-color: var(--brand-celeste) !important;
+    color: var(--brand-dark) !important;
+}
+
+/* Tarjetas y detalles */
+.treatment-card{
+    border: none;
+    border-radius: .75rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+    background: var(--brand-white);
+}
+.treatment-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+.treatment-card .card-img-top{
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+
+/* Ajustes de texto */
+.text-muted{ color: var(--muted) !important; }
 
 @media (max-width: 576px){
     .treatment-card .card-img-top{ height: 140px; }
