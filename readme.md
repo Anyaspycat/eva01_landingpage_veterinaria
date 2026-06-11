@@ -75,6 +75,8 @@ GitHub Copilot contribuyó principalmente en:
 
 El proyecto se encuentra publicado mediante **Vercel**, permitiendo su acceso desde cualquier navegador web.
 
+https://eva01-landingpage-veterinaria.vercel.app/
+
 ---
 
 ## Autor
