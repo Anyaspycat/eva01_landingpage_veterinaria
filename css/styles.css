@@ -1,0 +1,18 @@
+/* Estilos base para reseñas y paleta */
+:root{
+    --brand-celeste: #5BC0EB;
+    --brand-white: #ffffff;
+    --muted: #6c757d;
+}
+
+/* Reseñas */
+#resenas article{ background: var(--brand-white); }
+#resenas .text-warning{ color: #f6c84c !important; }
+
+/* Ajustes generales (si no existen) */
+.bg-celeste{ background-color: var(--brand-celeste) !important; }
+.btn-celeste{ background-color: var(--brand-celeste); color: var(--brand-white); }
+
+@media (max-width:576px){
+    #resenas article{ padding: 1rem; }
+}
